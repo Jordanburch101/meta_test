@@ -1,0 +1,33 @@
+/* Header
+==============================*/
+
+
+
+/* Nav
+==============================*/
+
+nav.main-menu{
+  ul{
+    padding:0; 
+    margin:0; 
+    display:inline-block; 
+    position:relative;
+    li{
+      display:inline-block; 
+      padding:0; 
+      margin:0; 
+      position:relative;
+    }
+    .sub-menu-wrap{
+      display:none; 
+      position:absolute; 
+      white-space:nowrap; 
+      top:100%; 
+      left:0; 
+      z-index:99999; 
+      text-align:left; 
+      overflow:hidden; 
+      padding:0;
+    }
+  }
+}

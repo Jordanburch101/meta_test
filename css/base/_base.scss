@@ -1,0 +1,194 @@
+/*============Sticky Footer============*/
+
+html{
+  font-size:62.5%;
+  height:100%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height:100%;
+  min-height: 100%;
+  height:auto!important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap{
+  flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  position: relative;
+  right:0;
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+}
+
+.clear{clear:both;}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.alignright,
+img.alignright {
+  float:right;
+  margin:0 0 15px 30px;
+}
+
+img.alignleft,
+.alignleft {
+  float:left;
+  margin:0 30px 15px 0;
+}
+
+img.aligncenter{
+  display: block;
+  margin:0 auto;
+}
+
+* {outline:none!important;}
+
+/*==========Fonts & Headings===========*/
+
+body{
+	font-family:$bodyfont;
+	color:$body;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 36px;
+  font-size: 3.6rem;
+  margin:0 0 20px 0;
+}
+
+h2{
+  font-size: 28px;
+  font-size: 2.8rem;
+  margin:0 0 20px 0;
+}
+
+h3{
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin:0 0 20px 0;
+}
+
+h4{
+  font-size: 22px;
+  font-size: 2.2rem;
+  margin:0 0 20px 0;
+}
+
+h5{
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin:0 0 20px 0;
+}
+
+p{
+  margin:0 0 20px 0;
+}
+
+ol,ul{
+  margin:0 0 20px 0;
+}
+
+strong{font-weight:bold}
+
+a{
+  color:$primary;
+  text-decoration:none; 
+  -webkit-transition: all 0.2s ease; 
+  -moz-transition: all 0.2s ease; 
+  -o-transition: all 0.2s ease; 
+  transition: all 0.2s ease;
+}
+
+a:visited,
+a:hover,
+a:active{
+  text-decoration:none;
+}
+
+.margin-top {
+  margin-top: 9rem;
+  @include xs {margin-top: 9rem;}
+  @include sm {margin-top: 9rem;}
+}
+
+.margin-bottom {
+  margin-bottom: 9rem;
+  @include xs {margin-bottom: 9rem;}
+  @include sm {margin-bottom: 9rem;}
+}
+
+.margin {
+ margin: 9rem 0;
+ @include xs {margin: 9rem 0;}
+ @include sm {margin: 9rem 0;}
+}
+
+.padding-top {
+   padding-top: 9rem;
+   @include xs {padding-top: 9rem;}
+   @include sm {padding-top: 9rem;}
+}
+
+.padding-bottom {
+  padding-bottom: 9rem;
+   @include xs {padding-bottom: 9rem;}
+   @include sm {padding-bottom: 9rem;}
+}
+
+.padding {
+  padding: 9rem 0;
+  @include xs {padding: 9rem 0;}
+  @include sm {padding: 9rem 0;}
+}
+
+// button settings
+.button-settings {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.primary-btn{
+  // Button var
+  $btn-color: #fff;
+  $btn-bg: $color-1;
+  // 
+  @extend .button-settings;
+  background-color: $btn-bg !important;
+  color: $btn-color;
+  i{color: $btn-color;}
+  &:hover{
+    background-color: darken($color: $btn-bg, $amount: 10%) !important;
+    color: $btn-color;
+  }
+}
+
+.gallery {
+  .img-wrap > img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,27 @@
+/*========== Variables ============*/
+
+$primary: #1D2945;
+$secondary: #3AAE2A;
+
+$body:#272727;
+
+$bodyfont:'Poppins', sans-serif;
+$headingfont:'Poppins', sans-serif;
+
+$xs: "(max-width: 575px)";
+$sm: "(min-width: 576px) and (max-width: 767px)";
+$md: "(min-width: 768px) and (max-width: 991px)";
+$lg: "(min-width: 992px) and (max-width: 1199px)";
+$xl: "(min-width: 992px) and (max-width: 1199px)";
+$xxl: "(min-width: 1400px)";
+
+.clr-white {
+  color: #fff;
+}
+.clr-black {
+  color: #000;
+}
+
+.clr-primary {
+  color: $primary;
+}

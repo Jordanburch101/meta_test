@@ -1,0 +1,133 @@
+/*========== General field styles ===========*/
+.gform_body {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="number"],
+  input[type="password"],
+  select,
+  textarea {
+    border: 2px solid $primary;
+    color: white;
+    font-size: 1.4rem;
+    padding: 14px 24px !important;
+    background: transparent !important;
+    // placeholder
+    &::placeholder {
+      color: white;
+    }
+  }
+  input.datepicker {
+    width: 100% !important;
+  }
+  input[type="number"],
+  .gfield_time_ampm select {
+    padding: 1rem 0.6rem !important;
+    height: 5rem;
+    // min-width: 90px !important;
+  }
+  input[type="number"] {
+    padding-left: 2rem !important;
+  }
+  .minute_label,
+  .hour_label {
+    display: none !important;
+  }
+  .gfield_required_text {
+    display: none !important;
+  }
+}
+
+.gform_footer {
+  margin: 0 !important;
+  padding: 0 !important;
+  input[type="submit"] {
+    @extend .primary-btn;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+    border: none !important;
+  }
+}
+
+// footer
+#footer {
+  .gform_body {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    input[type="password"],
+    select,
+    textarea {
+      border: 1px solid $primary;
+      color: white;
+      font-size: 1.4rem;
+      padding: 6px 14px !important;
+      background: transparent !important;
+      // placeholder
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  
+  .gform_footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: flex-end;
+    input[type="submit"] {
+      background-color: transparent !important;
+      font-weight: 600 !important;
+      color: white !important;
+      border: none !important;
+      font-size: 1.6rem !important;
+      position: relative;
+    }
+  }
+}
+
+
+.enquiry-form {
+  .gform_fields  {
+    grid-column-gap: 4% !important;
+  }
+  .gform_body {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    input[type="password"],
+    select,
+    textarea {
+      border: 2px solid $primary;
+      color: $body;
+      font-size: 1.4rem;
+      padding: 6px 8px !important;
+      background: transparent !important;
+      // placeholder
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  
+  .gform_footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    input[type="submit"] {
+      @extend .primary-btn;
+      margin-top: 2rem;
+      transition: all 0.3s ease-in-out;
+      border: none !important;
+    }
+  }
+}
+
+
+/*========== General field styles ===========*/
+.fuel-form {
+  background-color: $secondary;
+}
