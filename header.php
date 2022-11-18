@@ -73,5 +73,3 @@
         </div>
       </section>
     </header>
-
-<h1>HELLO TEST</h1>

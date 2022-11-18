@@ -5,7 +5,6 @@
  */
 
 get_header(); ?>
-3423432423
 	<section class="container">
 		<div class="row">
 			<div class="col-12">
@@ -18,5 +17,5 @@ get_header(); ?>
 	</section><!-- container -->
 
 	<?php get_template_part('components/content_components');?>
-
+  <p>added via github</p>
 <?php get_footer(); ?>
